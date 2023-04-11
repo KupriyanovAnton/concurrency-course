@@ -55,7 +55,7 @@ public class AuctionTests {
 
     @RepeatedTest(TEST_COUNT)
     public void testPessimistic() throws InterruptedException {
-        Auction auction = new AuctionPessimistic(notifier);
+        Auction auction = new AuctionPessimisticReady(notifier);
         testCorrectLatestBid(auction, "pessimistic");
     }
 
